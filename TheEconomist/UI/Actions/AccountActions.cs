@@ -1,9 +1,4 @@
-﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium; 
 using TheEconomist.UI.Pom;
 
 namespace TheEconomist.UI.Actions
@@ -11,26 +6,26 @@ namespace TheEconomist.UI.Actions
       
      public class AccountActions
      {
-          private  AccountPage accountPage;
+          private  AccountPage AccountPage;
        
 
           public AccountActions(IWebDriver driver)
           {
-               accountPage = new AccountPage(driver);
-          }
-
-          public bool GetFirstname(string firstname)
-          {
-               return accountPage.GetFieldFirstName(firstname).Displayed;
+               AccountPage = new AccountPage(driver);
           }
            
-          public bool GetLastname(string lastname)
+          public bool GetFirstname(string FirstName)
           {
-               return accountPage.GetFieldLastname(lastname).Displayed;
+               return AccountPage.GetField(FirstName).Displayed;
           }
-          public bool GetEmail(string email)
+           
+          public bool GetLastname(string LastName)
           {
-               return accountPage.GetFieldEmail(email).Displayed;
+               return AccountPage.GetField(LastName).Displayed;
+          }
+          public bool GetEmail(string Email)
+          {
+               return AccountPage.GetField(Email).Displayed;
           }
            
      }

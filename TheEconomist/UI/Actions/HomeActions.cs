@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿ 
 using TheEconomist.UI.Pom;
 using OpenQA.Selenium;
 
@@ -10,26 +6,26 @@ namespace TheEconomist.UI.Actions
 {
      public class HomeActions
      {
-          private readonly HomePage homePage;
+          private readonly HomePage HomePage;
 
           public HomeActions(IWebDriver driver)
           {
-               homePage = new HomePage(driver);
+               HomePage = new HomePage(driver);
           }
           public void Navigate(string url)
           {
-               homePage.Navigate(url);
+               HomePage.Navigate(url);
           }
           public void AcceptCookie()
           {
-               homePage.CookiePopup.AcceptCookie.Click();
-               homePage.SwitchToDefault();
+               HomePage.CookiePopup.AcceptCookie.Click();
+               HomePage.SwitchToDefault();
           }
 
           public void EconomistAccount()
           {
-               homePage.myEconomist.Click();
-               homePage.accountButton.Click();
+               HomePage.MyEconomist.Click();
+               HomePage.AccountButton.Click();
           }
      }
 }

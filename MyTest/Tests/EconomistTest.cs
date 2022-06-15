@@ -12,7 +12,11 @@ namespace MyTest.Tests
                HomeActions.Navigate("https://www.economist.com/");
                HomeActions.AcceptCookie();
                RegistrationActions.InitRegistration();
-               RegistrationActions.Register("Nastea", "Pantelei", "nastiushkaemaildemodemo@mailinator.com", "passwordnew111");
+               RegistrationActions.Register("Nastea", "Pantelei", "nastikaemaildemo2@mailinator.com", "passwordnew111");
+               HomeActions.EconomistAccount();
+               Assert.IsTrue(AccountActions.GetFirstname("Nastea"));
+               Assert.IsTrue(AccountActions.GetLastname("Pantelei"));
+               Assert.IsTrue(AccountActions.GetEmail("nastikaemaildemo2@mailinator.com"));
 
 
           }

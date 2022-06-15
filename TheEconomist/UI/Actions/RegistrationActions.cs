@@ -1,41 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿ 
 using TheEconomist.UI.Pom;
 using OpenQA.Selenium;
 namespace TheEconomist.UI.Actions
 {
      public class RegistrationActions
      {
-          private readonly HomePage homePage;
-          private readonly LoginPage loginPage;
-          private readonly RegistrationPage registrationPage;
+          private readonly HomePage HomePage;
+          private readonly LoginPage LoginPage;
+          private readonly RegistrationPage RegistrationPage;
 
           public RegistrationActions(IWebDriver driver)
           {
-               homePage = new HomePage(driver); ;
-               loginPage = new LoginPage(driver);
-               registrationPage = new RegistrationPage(driver);//FIX HERE
+               HomePage = new HomePage(driver); ;
+               LoginPage = new LoginPage(driver);
+               RegistrationPage = new RegistrationPage(driver); 
           }
 
           public void InitRegistration()
           {
-               homePage.loginButton.Click();
-               loginPage.RegisterNow.Click();
+               HomePage.LoginButton.Click();
+               LoginPage.RegisterNow.Click();
           }
 
-          public void Register(string firstname, string lastname,string email, string password)
+          public void Register(string FirstName, string LastName,string Email, string Password)
           {
                //  registrationPage.Email.SendKeys(email);//FIX
 
-               registrationPage.FirstName.SendKeys(firstname);
-               registrationPage.LastName.SendKeys(lastname);
-               registrationPage.Email.SendKeys(email);
-               registrationPage.Password.SendKeys(password);
-               registrationPage.Check.Click();
-               registrationPage.SubmitButton.Click();
+               RegistrationPage.FirstName.SendKeys(FirstName);
+               RegistrationPage.LastName.SendKeys(LastName);
+               RegistrationPage.Email.SendKeys(Email);
+               RegistrationPage.Password.SendKeys(Password);
+               RegistrationPage.Check.Click();
+               RegistrationPage.SubmitButton.Click();
 
           }
      }

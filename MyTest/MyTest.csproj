@@ -88,7 +88,6 @@
     <Compile Include="Tests\Base\BaseTest.cs" />
     <Compile Include="Tests\Base\EconomistBase.cs" />
     <Compile Include="Tests\EconomistTest.cs" />
-    <Compile Include="Tests\AccountTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
