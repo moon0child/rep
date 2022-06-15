@@ -1,0 +1,9 @@
+C:\Users\admin\source\repos\MyTest\TheEconomist\obj\Debug\TheEconomist.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\MyTest\TheEconomist\obj\Debug\TheEconomist.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\MyTest\TheEconomist\bin\Debug\TheEconomist.dll
+C:\Users\admin\source\repos\MyTest\TheEconomist\bin\Debug\TheEconomist.pdb
+C:\Users\admin\source\repos\MyTest\TheEconomist\bin\Debug\WebDriver.dll
+C:\Users\admin\source\repos\MyTest\TheEconomist\bin\Debug\WebDriver.Support.dll
+C:\Users\admin\source\repos\MyTest\TheEconomist\obj\Debug\TheEconomist.csproj.CopyComplete
+C:\Users\admin\source\repos\MyTest\TheEconomist\obj\Debug\TheEconomist.dll
+C:\Users\admin\source\repos\MyTest\TheEconomist\obj\Debug\TheEconomist.pdb
